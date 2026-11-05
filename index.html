@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <div class="top">
+        <div>
+            <h2>NEXUS<span>.</span></h2>
+            <p>SMART CALCULATOR</p>
+        </div>
+
+        <button id="themeToggle" class="theme-btn">☀️</button>
+    </div>
+
+    <div class="display">
+        <div id="history"></div>
+        <input type="text" id="result" value="0" readonly>
+    </div>
+
+    <div class="buttons">
+
+        <button class="special" data-action="clear">AC</button>
+        <button class="special" data-action="delete">DEL</button>
+        <button class="special" data-value="%">%</button>
+        <button class="operator" data-value="/">÷</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="operator" data-value="*">×</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button class="operator" data-value="-">−</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button class="special" data-action="sign">+/−</button>
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button class="equal" data-action="calculate">=</button>
+
+    </div>
+
+    <div class="history-panel">
+
+        <div class="history-heading">
+            <span>RECENT CALCULATIONS</span>
+            <button id="clearHistory">CLEAR</button>
+        </div>
+
+        <div id="historyList">
+            <p>No calculations yet.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">POWERED BY NEXUS ENGINE</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
